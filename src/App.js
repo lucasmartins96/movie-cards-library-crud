@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div>Movie Card Library CRUD</div>
       <Switch>
-        <Route path="/movies/:id/edit" render={ () => <EditMovie /> } />
+        <Route path="/movies/:id/edit" render={ (props) => <EditMovie { ...props } /> } />
         <Route path="/movies/new"><NewMovie /></Route>
         <Route path="/movies/:id" render={ (props) => <MovieDetails { ...props } /> } />
         <Route exact path="/"><MovieList /></Route>

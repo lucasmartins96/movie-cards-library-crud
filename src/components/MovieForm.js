@@ -85,6 +85,8 @@ class MovieForm extends React.Component {
             id="movie_storyline"
             value={ storyline }
             onChange={ (event) => this.updateMovie('storyline', event.target.value) }
+            rows={ 10 }
+            cols={ 30 }
           />
           Sinopse
         </label>
