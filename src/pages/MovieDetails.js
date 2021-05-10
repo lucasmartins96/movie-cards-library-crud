@@ -33,6 +33,11 @@ class MovieDetails extends Component {
     );
   };
 
+  removeMovie = async () => {
+    const { match: { params: { id } } } = this.props;
+    await movieAPI.deleteMovie(id);
+  }
+
   render() {
     // Change the condition to check the state
     // if (true) return <Loading />;
