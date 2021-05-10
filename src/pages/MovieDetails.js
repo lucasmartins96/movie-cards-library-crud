@@ -56,6 +56,7 @@ class MovieDetails extends Component {
         <p>{ `Genre: ${genre}` }</p>
         <p>{ `Rating: ${rating}` }</p>
         <p><Link to={ `/movies/${id}/edit` }>EDITAR</Link></p>
+        {/* Crédito ao colega Pedro Henrique pela ajuda no requisito 7 */}
         <p><Link to="/" onClick={ this.removeMovie }>DELETAR</Link></p>
         <p><Link to="/">VOLTAR</Link></p>
       </div>
